@@ -5,6 +5,7 @@ const { stdin, stdout } = require('process');
 const writeStream = fs.createWriteStream(
   path.join(__dirname, 'text.txt'));
 
+stdout.write('Самое время ввести текст\n');
 stdin.on('data', data => {
   let strData = data.toString().trim();
 
